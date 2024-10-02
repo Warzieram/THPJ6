@@ -3,12 +3,18 @@ print("> ")
 
 n = gets.chomp
 
+if n.to_i == 0
+    puts "Erreur: veuillez entrer un nombre entre 1 et 25"
+    exit
+end
+
 n = Integer(n)
 
-if n <= 1 || n >= 25
+if n <= 1 || n > 25
     puts "Erreur: Le nombre doit être entre 1 et 25"
     exit
 end
+
 puts("Voici la pyramide :")
 
 for i in 0..n-1 do
