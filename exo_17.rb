@@ -2,12 +2,6 @@ puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? "
 print("> ")
 
 n = gets.chomp
-
-if !(n.match(/\A-?<\d+<\Z/))
-    puts "Erreur: veuillez entrer un nombre"
-    exit
-end
-
 n = Integer(n)
 
 if n <= 1 || n >= 25
